@@ -1,0 +1,16 @@
+### ¿Hay un orden recomendado para aprender estos lenguajes?
+
+**Sí, totalmente.** Para una ruta de práctica Fullstack Junior fluida, la secuencia pedagógica ideal es:
+
+1. **JavaScript**: Es la base del desarrollo web. Debe aprender las bases de variables,
+    funciones y arreglos aquí primero.
+
+2. **TypeScript**: Como es un "superconjunto" de JavaScript, el salto es natural. Le enseñará
+   disciplina de tipado y buenas prácticas profesionales sobre el mismo código JS que ya conoce.
+
+3. **Python**: Su sintaxis limpia y amigable le servirá para afianzar lógica, resolver algoritmos y
+    entender el backend sin pelear con reglas de compilación complejas.
+
+4. **C#**: Es el más estricto y estructurado (Orientación a Objetos pura y compilación estricta). 
+   Habiendo pasado por TypeScript (tipos) y Python (lógica), entender la arquitectura de C# y .NET
+   le resultará mucho más natural y fácil de digerir.

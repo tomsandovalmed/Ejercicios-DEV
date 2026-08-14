@@ -1,0 +1,5 @@
+como puedes ver, en el arbol de directorios existe un archivo llamado ".gitignore" este archivo simplemente
+sirve para que cuando subas tus archivos a github, lo que tu escojas no se suba, por ejemplo en el archivo
+de este arbol de directorios no permite que se suba a github el archivo "EJERCICIOS.js" de la carpeta
+2. TYPESCRIPT/EJERCICIOS.js con la finalidad de que cuando quieras volver a realizar los pasos o desde otro
+pc puedas generar ese archivo con las instrucciones dadas sin problemas.

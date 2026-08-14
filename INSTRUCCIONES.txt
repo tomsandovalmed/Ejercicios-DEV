@@ -1,0 +1,106 @@
+=======================================================
+ GUÍA DE INICIO Y EJECUCIÓN - EJERCICIOS DEV FULLSTACK
+=======================================================
+
+1. PRERREQUISITOS DE INSTALACIÓN
+Antes de comenzar a ejecutar los ejercicios, asegúrate de tener instaladas las siguientes herramientas
+en tu sistema (si no las tienes, descárgalas e instálalas una vez):
+
+- Python: (https://www.python.org/) -> Asegúrate de marcar la casilla "Add Python to PATH" durante la instalación.
+
+- Node.js (incluye npm): (https://nodejs.org/) -> Necesario para ejecutar JavaScript y TypeScript.
+
+- .NET SDK (Versión actual): (https://dotnet.microsoft.com/) -> Necesario para ejecutar C#.
+
+- Herramienta de scripts de C#: Ejecuta este comando una sola vez en tu terminal si vas a correr archivos `.csx`:
+  dotnet tool install -g dotnet-script
+
+-------------------------------------------------------
+
+2. CÓMO ABRIR Y CONFIGURAR LA TERMINAL EN VS CODE
+- Abre la terminal integrada presionando las teclas: Ctrl + Ñ (o Ctrl + `).
+- Al aparecer la sección de terminales, haz clic en la flecha hacia abajo " v " ubicada al lado del botón "+".
+- Selecciona la opción Command Prompt (CMD) para asegurarte de trabajar con el entorno correcto de Windows.
+
+-------------------------------------------------------
+
+💡 Tip rápido para VS Code: Si selecciona un bloque de código y presiona Ctrl + / (o Ctrl + K, Ctrl + C), 
+VS Code comentará o descomentará todas esas líneas de golpe. ¡Es súper práctico para ir probando de a uno!
+Esto es por si tienes problemas al ejecutar los ejercicios por ejercios realizados y que esten interrumpiendo
+la ejecucion de ejercicios posteriores :D
+
+3. COMANDOS PARA PROBAR CADA LENGUAJE INDIVIDUALMENTE
+Una vez ubicada la terminal en la raíz del repositorio, puedes ejecutar los ejercicios por separado:
+
+- PYTHON:
+  python PYTHON/EJERCICIOS.py
+
+- JAVASCRIPT:
+  node JAVASCRIPT/EJERCICIOS.js
+
+- TYPESCRIPT:
+  (TypeScript no lo entiende directamente la máquina, por lo que requiere un paso previo de compilación)
+  * Paso previo (Compilar): Convierte el código TypeScript a JavaScript plano.
+    npx tsc TYPESCRIPT/EJERCICIOS.ts
+  * (Ejecutar): Corre el archivo JavaScript resultante, no necesitas hacer el paso previo nuevamente.
+    node TYPESCRIPT/EJERCICIOS.js
+
+- C#:
+  dotnet script C#/EJERCICIOS.csx
+
+-------------------------------------------------------
+
+4. INSTRUCCIONES PARA SUBIR TU PROGRESO A GITHUB: 
+(ANTES DEBES CREAR UN REPOSITORIO O RAMA PROPIO/A EN GITHUB)
+Cuando hagas cambios o resuelvas más ejercicios, súbelos a tu repositorio con los siguientes pasos:
+#CONSIDERA INVESTIGAR COMANDOS GIT PARA SUBIR ESTOS CAMBIOS A TU PROPIO REPOSITORIO
+  git add .
+  git commit -m "feat: descripción de los cambios"
+  git push origin main
+
+
+
+
+-------------------------------------------------------
+ EXTRA: COMANDOS ESENCIALES DE GIT Y GITHUB
+-------------------------------------------------------
+
+1. INICIAR Y CONFIGURAR UN REPOSITORIO
+   - git init
+     * Para qué sirve: Inicializa un repositorio de Git vacio en tu carpeta actual.
+     * Cómo usarlo: git init
+
+2. VER EL ESTADO DEL PROYECTO
+   - git status
+     * Para qué sirve: Muestra qué archivos han cambiado, cuáles están listos para subirse y cuáles no.
+     * Cómo usarlo: git status
+
+3. PREPARAR LOS CAMBIOS
+   - git add .
+     * Para qué sirve: Añade todos los archivos modificados o nuevos al área de preparación (stage) para el siguiente commit.
+     * Cómo usarlo: git add .
+
+4. GUARDAR LOS CAMBIOS (COMMIT)
+   - git commit -m "mensaje descriptivo"
+     * Para qué sirve: Guarda formalmente los cambios preparados con un mensaje que describe lo que hiciste.
+     * Cómo usarlo: git commit -m "feat: se agregan nuevos ejercicios de python"
+
+5. SUBIR LOS CAMBIOS A GITHUB
+   - git push origin main
+     * Para qué sirve: Sube tus commits locales al repositorio remoto en GitHub (en la rama principal).
+     * Cómo usarlo: git push origin main
+
+6. DESCARGAR ACTUALIZACIONES DE GITHUB
+   - git pull
+     * Para qué sirve: Descarga y fusiona los cambios más recientes que estén en GitHub hacia tu computador.
+     * Cómo usarlo: git pull
+
+7. DEJAR DE RASTREAR UN ARCHIVO SIN BORRARLO
+   - git rm --cached nombre_del_archivo
+     * Para qué sirve: Elimina un archivo del control de versiones de Git para que deje de subirse, pero lo mantiene intacto en tu computador.
+     * Cómo usarlo: git rm --cached TYPESCRIPT/EJERCICIOS.js
+
+8. VER EL HISTORIAL DE CAMBIOS
+   - git log --oneline
+     * Para qué sirve: Muestra un historial resumido de todos los commits realizados en el proyecto.
+     * Cómo usarlo: git log --oneline
